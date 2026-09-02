@@ -1,36 +1,62 @@
-# This is a basic workflow to help you get started with Actions
+name: corpus-sync
 
-name: CI
-
-# Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-
-  # Allows you to run this workflow manually from the Actions tab
+  schedule:
+    - cron: "0 2 * * 1"          # каждый понедельник, 02:00 UTC
   workflow_dispatch:
+    inputs:
+      check_only:
+        description: "Только проверить ID, не выгружать"
+        type: boolean
+        default: false
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+permissions:
+  contents: write
+
 jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
+  sync:
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
 
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
-
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
+      # Одноразовый шаг: распаковать загруженный архив и разложить файлы.
+      # На следующих запусках архива уже не будет, шаг просто пропустится.
+      - name: Распаковать архив
         run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+          if [ -f "files git.zip" ]; then
+            mkdir -p scripts seed _unpacked
+            unzip -o "files git.zip" -d _unpacked
+            mv _unpacked/docids.txt        seed/docids.txt
+            mv _unpacked/check_ids.py      scripts/check_ids.py
+            mv _unpacked/fetch.py          scripts/fetch.py
+            mv _unpacked/normalize.py      scripts/normalize.py
+            mv _unpacked/README.md         README.md
+            rm -rf _unpacked "files git.zip"
+            echo "Архив распакован."
+          else
+            echo "Архива нет, файлы уже на месте."
+          fi
+          ls -R scripts seed
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install httpx selectolax
+
+      - name: Проверка ID
+        run: python scripts/check_ids.py
+
+      - name: Выгрузка
+        if: ${{ github.event.inputs.check_only != 'true' }}
+        run: python scripts/fetch.py
+
+      - name: Нормализация
+        if: ${{ github.event.inputs.check_only != 'true' }}
+        run: python scripts/normalize.py
+
+      - name: Коммит
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "corpus sync ${{ github.run_number }}"
+          add_options: "-A"
