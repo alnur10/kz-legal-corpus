@@ -2,7 +2,7 @@ name: corpus-sync
 
 on:
   schedule:
-    - cron: "0 2 * * 1"          # каждый понедельник, 02:00 UTC
+    - cron: "0 2 * * 1"
   workflow_dispatch:
     inputs:
       check_only:
@@ -19,24 +19,32 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # Одноразовый шаг: распаковать загруженный архив и разложить файлы.
-      # На следующих запусках архива уже не будет, шаг просто пропустится.
       - name: Распаковать архив
         run: |
           if [ -f "files git.zip" ]; then
             mkdir -p scripts seed _unpacked
             unzip -o "files git.zip" -d _unpacked
-            mv _unpacked/docids.txt        seed/docids.txt
-            mv _unpacked/check_ids.py      scripts/check_ids.py
-            mv _unpacked/fetch.py          scripts/fetch.py
-            mv _unpacked/normalize.py      scripts/normalize.py
-            mv _unpacked/README.md         README.md
+            mv _unpacked/docids.txt   seed/docids.txt
+            mv _unpacked/check_ids.py scripts/check_ids.py
+            mv _unpacked/fetch.py     scripts/fetch.py
+            mv _unpacked/normalize.py scripts/normalize.py
+            mv _unpacked/README.md    README.md
             rm -rf _unpacked "files git.zip"
             echo "Архив распакован."
           else
             echo "Архива нет, файлы уже на месте."
           fi
+          echo "--- что лежит в репозитории ---"
           ls -R scripts seed
+
+      # Фиксируем раскладку СРАЗУ. Что бы ни случилось дальше,
+      # файлы уже в репозитории и второй раз распаковывать нечего.
+      - name: Зафиксировать раскладку
+        if: always()
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "распаковка архива"
+          add_options: "-A"
 
       - uses: actions/setup-python@v5
         with:
@@ -44,7 +52,16 @@ jobs:
 
       - run: pip install httpx selectolax
 
+      - name: Доступен ли adilet с раннера
+        continue-on-error: true
+        run: |
+          curl -sS -o /dev/null -w "HTTP %{http_code} за %{time_total}s\n" \
+            -A "lsc-corpus-bot/1.0" \
+            https://adilet.zan.kz/rus/docs/K2600000253
+
+      # Проверка информационная: красный крестик здесь job не роняет.
       - name: Проверка ID
+        continue-on-error: true
         run: python scripts/check_ids.py
 
       - name: Выгрузка
@@ -55,7 +72,8 @@ jobs:
         if: ${{ github.event.inputs.check_only != 'true' }}
         run: python scripts/normalize.py
 
-      - name: Коммит
+      - name: Коммит корпуса
+        if: always()
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "corpus sync ${{ github.run_number }}"
