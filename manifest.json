@@ -1,3 +1,246 @@
 {
-  "documents": {}
+  "documents": {
+    "K030000442_": {
+      "fetched_at": "2026-09-14T07:23:09Z",
+      "revisions": [
+        {
+          "seen": "2026-09-14",
+          "sha256": "11223bd71798782098dd94a3fd99b09975d119088264c8d9f9a79709b183d782"
+        }
+      ],
+      "sha256": "11223bd71798782098dd94a3fd99b09975d119088264c8d9f9a79709b183d782",
+      "url": "https://adilet.zan.kz/rus/docs/K030000442_/compare"
+    },
+    "K030000477_": {
+      "fetched_at": "2026-09-14T07:23:14Z",
+      "revisions": [
+        {
+          "seen": "2026-09-14",
+          "sha256": "11223bd71798782098dd94a3fd99b09975d119088264c8d9f9a79709b183d782"
+        }
+      ],
+      "sha256": "11223bd71798782098dd94a3fd99b09975d119088264c8d9f9a79709b183d782",
+      "url": "https://adilet.zan.kz/rus/docs/K030000477_/compare"
+    },
+    "K1100000518": {
+      "fetched_at": "2026-09-14T07:23:36Z",
+      "revisions": [
+        {
+          "seen": "2026-09-14",
+          "sha256": "11223bd71798782098dd94a3fd99b09975d119088264c8d9f9a79709b183d782"
+        }
+      ],
+      "sha256": "11223bd71798782098dd94a3fd99b09975d119088264c8d9f9a79709b183d782",
+      "url": "https://adilet.zan.kz/rus/docs/K1100000518/compare"
+    },
+    "K1400000226": {
+      "fetched_at": "2026-09-14T07:23:40Z",
+      "revisions": [
+        {
+          "seen": "2026-09-14",
+          "sha256": "11223bd71798782098dd94a3fd99b09975d119088264c8d9f9a79709b183d782"
+        }
+      ],
+      "sha256": "11223bd71798782098dd94a3fd99b09975d119088264c8d9f9a79709b183d782",
+      "url": "https://adilet.zan.kz/rus/docs/K1400000226/compare"
+    },
+    "K1400000231": {
+      "fetched_at": "2026-09-14T07:23:43Z",
+      "revisions": [
+        {
+          "seen": "2026-09-14",
+          "sha256": "11223bd71798782098dd94a3fd99b09975d119088264c8d9f9a79709b183d782"
+        }
+      ],
+      "sha256": "11223bd71798782098dd94a3fd99b09975d119088264c8d9f9a79709b183d782",
+      "url": "https://adilet.zan.kz/rus/docs/K1400000231/compare"
+    },
+    "K1400000234": {
+      "fetched_at": "2026-09-14T07:23:45Z",
+      "revisions": [
+        {
+          "seen": "2026-09-14",
+          "sha256": "11223bd71798782098dd94a3fd99b09975d119088264c8d9f9a79709b183d782"
+        }
+      ],
+      "sha256": "11223bd71798782098dd94a3fd99b09975d119088264c8d9f9a79709b183d782",
+      "url": "https://adilet.zan.kz/rus/docs/K1400000234/compare"
+    },
+    "K1400000235": {
+      "fetched_at": "2026-09-14T07:23:38Z",
+      "revisions": [
+        {
+          "seen": "2026-09-14",
+          "sha256": "11223bd71798782098dd94a3fd99b09975d119088264c8d9f9a79709b183d782"
+        }
+      ],
+      "sha256": "11223bd71798782098dd94a3fd99b09975d119088264c8d9f9a79709b183d782",
+      "url": "https://adilet.zan.kz/rus/docs/K1400000235/compare"
+    },
+    "K1500000375": {
+      "fetched_at": "2026-09-14T07:23:20Z",
+      "revisions": [
+        {
+          "seen": "2026-09-14",
+          "sha256": "11223bd71798782098dd94a3fd99b09975d119088264c8d9f9a79709b183d782"
+        }
+      ],
+      "sha256": "11223bd71798782098dd94a3fd99b09975d119088264c8d9f9a79709b183d782",
+      "url": "https://adilet.zan.kz/rus/docs/K1500000375/compare"
+    },
+    "K1500000377": {
+      "fetched_at": "2026-09-14T07:23:05Z",
+      "revisions": [
+        {
+          "seen": "2026-09-14",
+          "sha256": "11223bd71798782098dd94a3fd99b09975d119088264c8d9f9a79709b183d782"
+        }
+      ],
+      "sha256": "11223bd71798782098dd94a3fd99b09975d119088264c8d9f9a79709b183d782",
+      "url": "https://adilet.zan.kz/rus/docs/K1500000377/compare"
+    },
+    "K1500000414": {
+      "fetched_at": "2026-09-14T07:23:29Z",
+      "revisions": [
+        {
+          "seen": "2026-09-14",
+          "sha256": "11223bd71798782098dd94a3fd99b09975d119088264c8d9f9a79709b183d782"
+        }
+      ],
+      "sha256": "11223bd71798782098dd94a3fd99b09975d119088264c8d9f9a79709b183d782",
+      "url": "https://adilet.zan.kz/rus/docs/K1500000414/compare"
+    },
+    "K1700000123": {
+      "fetched_at": "2026-09-14T07:23:27Z",
+      "revisions": [
+        {
+          "seen": "2026-09-14",
+          "sha256": "11223bd71798782098dd94a3fd99b09975d119088264c8d9f9a79709b183d782"
+        }
+      ],
+      "sha256": "11223bd71798782098dd94a3fd99b09975d119088264c8d9f9a79709b183d782",
+      "url": "https://adilet.zan.kz/rus/docs/K1700000123/compare"
+    },
+    "K1700000125": {
+      "fetched_at": "2026-09-14T07:23:18Z",
+      "revisions": [
+        {
+          "seen": "2026-09-14",
+          "sha256": "11223bd71798782098dd94a3fd99b09975d119088264c8d9f9a79709b183d782"
+        }
+      ],
+      "sha256": "11223bd71798782098dd94a3fd99b09975d119088264c8d9f9a79709b183d782",
+      "url": "https://adilet.zan.kz/rus/docs/K1700000125/compare"
+    },
+    "K2000000350": {
+      "fetched_at": "2026-09-14T07:23:47Z",
+      "revisions": [
+        {
+          "seen": "2026-09-14",
+          "sha256": "11223bd71798782098dd94a3fd99b09975d119088264c8d9f9a79709b183d782"
+        }
+      ],
+      "sha256": "11223bd71798782098dd94a3fd99b09975d119088264c8d9f9a79709b183d782",
+      "url": "https://adilet.zan.kz/rus/docs/K2000000350/compare"
+    },
+    "K2000000360": {
+      "fetched_at": "2026-09-14T07:23:34Z",
+      "revisions": [
+        {
+          "seen": "2026-09-14",
+          "sha256": "11223bd71798782098dd94a3fd99b09975d119088264c8d9f9a79709b183d782"
+        }
+      ],
+      "sha256": "11223bd71798782098dd94a3fd99b09975d119088264c8d9f9a79709b183d782",
+      "url": "https://adilet.zan.kz/rus/docs/K2000000360/compare"
+    },
+    "K2100000400": {
+      "fetched_at": "2026-09-14T07:23:12Z",
+      "revisions": [
+        {
+          "seen": "2026-09-14",
+          "sha256": "11223bd71798782098dd94a3fd99b09975d119088264c8d9f9a79709b183d782"
+        }
+      ],
+      "sha256": "11223bd71798782098dd94a3fd99b09975d119088264c8d9f9a79709b183d782",
+      "url": "https://adilet.zan.kz/rus/docs/K2100000400/compare"
+    },
+    "K2300000224": {
+      "fetched_at": "2026-09-14T07:23:32Z",
+      "revisions": [
+        {
+          "seen": "2026-09-14",
+          "sha256": "11223bd71798782098dd94a3fd99b09975d119088264c8d9f9a79709b183d782"
+        }
+      ],
+      "sha256": "11223bd71798782098dd94a3fd99b09975d119088264c8d9f9a79709b183d782",
+      "url": "https://adilet.zan.kz/rus/docs/K2300000224/compare"
+    },
+    "K2500000171": {
+      "fetched_at": "2026-09-14T07:23:25Z",
+      "revisions": [
+        {
+          "seen": "2026-09-14",
+          "sha256": "11223bd71798782098dd94a3fd99b09975d119088264c8d9f9a79709b183d782"
+        }
+      ],
+      "sha256": "11223bd71798782098dd94a3fd99b09975d119088264c8d9f9a79709b183d782",
+      "url": "https://adilet.zan.kz/rus/docs/K2500000171/compare"
+    },
+    "K2500000178": {
+      "fetched_at": "2026-09-14T07:23:16Z",
+      "revisions": [
+        {
+          "seen": "2026-09-14",
+          "sha256": "11223bd71798782098dd94a3fd99b09975d119088264c8d9f9a79709b183d782"
+        }
+      ],
+      "sha256": "11223bd71798782098dd94a3fd99b09975d119088264c8d9f9a79709b183d782",
+      "url": "https://adilet.zan.kz/rus/docs/K2500000178/compare"
+    },
+    "K2500000214": {
+      "fetched_at": "2026-09-14T07:23:23Z",
+      "revisions": [
+        {
+          "seen": "2026-09-14",
+          "sha256": "11223bd71798782098dd94a3fd99b09975d119088264c8d9f9a79709b183d782"
+        }
+      ],
+      "sha256": "11223bd71798782098dd94a3fd99b09975d119088264c8d9f9a79709b183d782",
+      "url": "https://adilet.zan.kz/rus/docs/K2500000214/compare"
+    },
+    "K2600000253": {
+      "fetched_at": "2026-09-14T07:23:07Z",
+      "revisions": [
+        {
+          "seen": "2026-09-14",
+          "sha256": "11223bd71798782098dd94a3fd99b09975d119088264c8d9f9a79709b183d782"
+        }
+      ],
+      "sha256": "11223bd71798782098dd94a3fd99b09975d119088264c8d9f9a79709b183d782",
+      "url": "https://adilet.zan.kz/rus/docs/K2600000253/compare"
+    },
+    "K940001000_": {
+      "fetched_at": "2026-09-14T07:23:00Z",
+      "revisions": [
+        {
+          "seen": "2026-09-14",
+          "sha256": "11223bd71798782098dd94a3fd99b09975d119088264c8d9f9a79709b183d782"
+        }
+      ],
+      "sha256": "11223bd71798782098dd94a3fd99b09975d119088264c8d9f9a79709b183d782",
+      "url": "https://adilet.zan.kz/rus/docs/K940001000_/compare"
+    },
+    "K990000409_": {
+      "fetched_at": "2026-09-14T07:23:03Z",
+      "revisions": [
+        {
+          "seen": "2026-09-14",
+          "sha256": "11223bd71798782098dd94a3fd99b09975d119088264c8d9f9a79709b183d782"
+        }
+      ],
+      "sha256": "11223bd71798782098dd94a3fd99b09975d119088264c8d9f9a79709b183d782",
+      "url": "https://adilet.zan.kz/rus/docs/K990000409_/compare"
+    }
+  }
 }
