@@ -220,6 +220,17 @@
       "sha256": "11223bd71798782098dd94a3fd99b09975d119088264c8d9f9a79709b183d782",
       "url": "https://adilet.zan.kz/rus/docs/K2600000253/compare"
     },
+    "K2600000255": {
+      "fetched_at": "2026-09-21T07:21:03Z",
+      "revisions": [
+        {
+          "seen": "2026-09-21",
+          "sha256": "11223bd71798782098dd94a3fd99b09975d119088264c8d9f9a79709b183d782"
+        }
+      ],
+      "sha256": "11223bd71798782098dd94a3fd99b09975d119088264c8d9f9a79709b183d782",
+      "url": "https://adilet.zan.kz/rus/docs/K2600000255/compare"
+    },
     "K940001000_": {
       "fetched_at": "2026-09-14T07:23:00Z",
       "revisions": [
